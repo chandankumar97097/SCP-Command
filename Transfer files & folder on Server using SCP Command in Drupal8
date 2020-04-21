@@ -1,0 +1,11 @@
+Show directory or files on server: 
+1. Type in your Terminal: ssh your_alies_@ssh.platform.sh 
+2. now you will see platform.sh in your terminal.
+3. check your files on server with this command: cd web/sites/default/files/
+4. ls -l (to view all files and permissions)
+
+Download files and folder:
+scp -r ssh your_alies_@ssh.platform.sh:/app/web/sites/default/files/FOLDER_NAME_WHICH_YOU_WANT_TO_DOWNLOAD/ ~/Desktop
+
+Upload Images and folder on SSH Server:
+scp -r /Desktop/YOUR_FILES_OR_FOLDER_NAME ssh your_alies_@ssh.platform.sh:/app/web/sites/default/files
